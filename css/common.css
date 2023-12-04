@@ -12,7 +12,7 @@ html, body {
     /* 页面背景 */
     background-image: url(../img/fb24c9063abd4c61e773f43b3b07ab1e0baa14a1.jpg@942w_531h_progressive.webp.jpg);
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
 } 
 
