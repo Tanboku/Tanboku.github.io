@@ -57,6 +57,26 @@
                     <a href="#32">3.2离散型随机变量函数的分布</a><br>
                     <a href="#33">3.3连续型随机变量的概率密度、分布函数</a><br>
                     <a href="#34">3.4连续型随机变量函数的分布</a><br>
+                    <a href="#41">4.1离散型——二项分布</a><br>
+                    <a href="#42">4.2离散型——泊松分布</a><br>
+                    <a href="#43">4.3连续型——均匀分布</a><br>
+                    <a href="#44">4.4连续型——指数分布</a><br>
+                    <a href="#45">4.5连续型——正态分布</a><br>
+                    <a href="#5">5.离散型二维随机变量</a><br>
+                    <a href="#6">6.连续型二维随机变量</a><br>
+                    <a href="#7">7.二维随机变量函数的分布</a><br>
+                    <a href="#81">8.1一维随机变量期望与方差</a><br>
+                    <a href="#82">8.2二维随机变量期望与方差</a><br>
+                    <a href="#83">8.3协方差</a><br>
+                    <a href="#84">8.4切比雪夫不等式</a><br>
+                    <a href="#91">9.1独立同分布中心极限定理</a><br>
+                    <a href="#92">9.2二项分布中心极限定理</a><br>
+                    <a href="#101">10.1常用统计量及性质</a><br>
+                    <a href="#102">10.2三种常见分布</a><br>
+                    <a href="#111">11.1矩估计</a><br>
+                    <a href="#112">11.2最大似然估计</a><br>
+                    <a href="#113">11.3无偏估计</a><br>
+                    <a href="#12">12.置信区间</a><br>
                     <br><br><br>
                     <h3 id="11">1.1事件的关系及运算</h3>
                     <p>首先来看一下事件之间的关系，以文氏图举例</p>
@@ -169,6 +189,106 @@
                     <br><br>
                     <h3 id="44">4.4连续型——指数分布</h3>
                     <img src="../probabilityimg/pro23.png" alt="">
+                    <h3 id="45">4.5连续型——正态分布</h3>
+                    <img src="../probabilityimg/pro24.png" alt="">
+                    <p>我们用图来举个例子</p>
+                    <img src="../probabilityimg/pro25.png" alt="">
+                    <p>我们可以发现两件事，图像关于μ对称，并且σ越小，图像越陡</p>
+                    <br>
+                    <p>接下来说标准正态分布</p>
+                    <p>标准正态分布就是正态分布中的μ为0，σ为1，这里我们的用Φ(x)表示</p>
+                    <img src="../probabilityimg/pro26.png" alt="">
+                    <p>这里第三条的意思是，如果满足不标准的正态分布，在求概率是，根据②查表会有一个值，考试一般会给</p>
+                    <br><br>
+                    <h3 id="5">5.离散型二维随机变量</h3>
+                    <p>这里我们要讲五个知识点，分布律、边缘分布律、独立性、函数的分布、条件分布</p>
+                    <p>首先来道例题</p>
+                    <img src="../probabilityimg/pro27.png" alt="">
+                    <p>第一问就是在表中对应数值，一个是0.3，一个是四个相加为0.7</p>
+                    <p>第二问边缘分布就是看x不同值的概率相加，比如x=-1时横向相加为0.6，x=2时为0.4，画出相应的表即可</p>
+                    <img src="../probabilityimg/pro28.png" alt="">
+                    <p>Y的边缘分布律同理</p>
+                    <p>第三问问是否独立，首先我们要看独立的条件</p>
+                    <img src="../probabilityimg/pro29.png" alt="">
+                    <p>计算发现，当X,Y都等于-1时，等式不成立所以不相互独立</p>
+                    <p>第四问就是把函数的值带进去一一对应概率即可</p>
+                    <p>第五问条件概率公式计算即可</p>
+                    <br><br>
+                    <h3 id="6">6.连续型二维随机变量</h3>
+                    <p>这里我们要讲四个知识点，概率密度，边缘概率密度，条件概率密度，独立性</p>
+                    <p>不过这里需要用到二重积分的算法，这里就自行复习</p>
+                    <p>还是先来道例题</p>
+                    <img src="../probabilityimg/pro30.png" alt="">
+                    <p>先将性质放出来</p>
+                    <img src="../probabilityimg/pro31.jpg" alt="">
+                    <p>由此可得，第一问仅需要算二重积分即可，结果c=4，P范围时小于1，结果是&frac16;</p>
+                    <p>第二、三、四问代入计算即可</p>
+                    <br><br>
+                    <h3 id="7">7.二维随机变量函数的分布</h3>
+                    <p>首先来看Z=X+Y</p>
+                    <p>我们有两种解法</p>
+                    <img src="../probabilityimg/pro32.jpg" alt="">
+                    <p>而具体使用哪种替换，我们的原则是，谁简单，替换谁</p>
+                    <p>确定好替换谁后，将①的公式写出来，我们先要确定被积函数是什么，确定的方法就是根据原式替换即可</p>
+                    <p>接下来确定积分范围，根据z的取值不同分情况代入二重积分计算即可</p>
+                    <p>而接下来的Z=XY以及Z=max{X,Y}相差不大，这里给出步骤，按步骤计算即可</p>
+                    <img src="../probabilityimg/pro33.jpg" alt="">\
+                    <p>接下来这个简单来说就是先求分布函数再求导</p>
+                    <img src="../probabilityimg/pro34.jpg" alt="">
+                    <p>再额外来两个填空题，这个结果可以当作结论来记</p>
+                    <img src="../probabilityimg/pro35.jpg" alt="">
+                    <br><br>
+                    <h3 id="81">8.1一维随机变量期望与方差</h3>
+                    <p>分为离散型和连续型，针对不同有不同的算法</p>
+                    <img src="../probabilityimg//pro36.png" alt="">
+                    <p>提一嘴，方差的平方根称为标准差，对于数学期望和方差的性质需要知道</p>
+                    <img src="../probabilityimg/pro37.jpg" alt="">
+                    <br><br>
+                    <p>还有一些常用的数学期望和方差</p>
+                    <img src="../probabilityimg/pro38.jpg" alt="">
+                    <br><br>
+                    <h3 id="82">8.2二维随机变量期望与方差</h3>
+                    <p>对于二维，在求期望时只需要先写出边缘分布律再按照一维计算即可</p>
+                    <p>若要求函数，只需要将对应变量的值代入函数再乘上概率相加即可</p>
+                    <br><br>
+                    <h3 id="83">8.3协方差</h3>
+                    <img src="../probabilityimg/pro39.jpg" alt="">
+                    <br><br>
+                    <h3 id="84">8.4切比雪夫不等式</h3>
+                    <img src="../probabilityimg/pro40.png" alt="">
+                    <br><br>
+                    <h3 id="91">9.1独立同分布中心极限定理</h3>
+                    <p>首先给上定理</p>
+                    <img src="../probabilityimg/pro41.jpg" alt="">
+                    <p>意思是，如果随机变量满足这四点，且求和近似与正态分布，其中正态分布的期望是nu、方差是nσ²</p>
+                    <p>那么我们就把求和的概率转换成了正态分布的概率</p>
+                    <p>像这种题都有一定的特点，独立、同分布、期望、方差存在、求和</p>
+                    <br><br>
+                    <h3 id="92">9.2二项分布中心极限定理</h3>
+                    <img src="../probabilityimg/pro42.png" alt="">
+                    <p>如果X满足二项分布，就将他认为近似与正态分布，不过是在n很大，p很小的情况下</p>
+                    <br><br>
+                    <h3 id="101">10.1常用统计量及性质</h3>
+                    <img src="../probabilityimg/pro43.jpg" alt="">
+                    <p>注意，统计量不含任何未知参数</p>
+                    <br><br>
+                    <h3 id="102">10.2三种常见分布</h3>
+                    <img src="../probabilityimg/pro44.jpg" alt="">
+                    <br><br>
+                    <h3 id="111">11.1矩估计</h3>
+                    <img src="../probabilityimg/pro45.jpg" alt="">
+                    <br><br>
+                    <h3 id="112">11.2最大似然估计</h3>
+                    <img src="../probabilityimg/pro46.jpg" alt="">
+                    <br><br>
+                    <h3 id="113">11.3无偏估计</h3>
+                    <img src="../probabilityimg/pro47.jpg" alt="">
+                    <img src="../probabilityimg/pro48.jpg" alt="">
+                    <br><br>
+                    <h3 id="12">12.置信区间</h3>
+                    <img src="../probabilityimg/pro49.png" alt="">
+                    <img src="../probabilityimg/pro50.png" alt="">
+
                 </div>
         </div>
 </body>
