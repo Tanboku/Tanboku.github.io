@@ -13,6 +13,7 @@ html, body {
     background-image: url(../img/bj.jpg);
     background-position: center center;
     background-repeat: repeat-y;
+    background-repeat: repeat-x;
     background-size: cover;
 } 
 
