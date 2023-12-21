@@ -12,6 +12,21 @@
     font-size: 25px;
 }
 
+.blog-content h4 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.blog-content h5 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+
 /* 博客日期 */
 .blog-content .date {
     text-align: center;
