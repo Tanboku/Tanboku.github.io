@@ -40,3 +40,8 @@
     text-indent: 2em;
     padding: 10px 0;
 }
+
+
+.blog-content img {
+    width: 750px;
+}
