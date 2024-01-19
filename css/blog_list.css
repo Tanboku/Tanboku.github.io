@@ -3,6 +3,7 @@
 .blog {
     width: 100%;
     padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* 博客的标题 */
